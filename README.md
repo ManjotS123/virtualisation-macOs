@@ -12,9 +12,9 @@ https://developer.apple.com/documentation/virtualization?language=objc
 
 ### Configurations
 
-`main.swift` - Creates the VM and includes the related configurations
-`build.sh` - Builds and signs the package
-`vm.plist` - Includes the entitlement that gets signed
+- `main.swift` - Creates the VM and includes the related configurations
+- `build.sh` - Builds and signs the package
+- `vm.plist` - Includes the entitlement that gets signed
 
 ### How to run the VM
 
@@ -24,10 +24,10 @@ https://developer.apple.com/documentation/virtualization?language=objc
 
 - Navigate to the boot directory and download the image files from the URLs
 
-`
+```
 curl -O <kernel image>
 curl -O <ram-disk image> 
-`
+```
 
 - Go back to the project root, build and sign the package and the entitlement
 
