@@ -14,7 +14,7 @@ https://developer.apple.com/documentation/virtualization?language=objc
 
 - `main.swift` - Creates the VM and includes the related configurations
 - `build.sh` - Builds and signs the package
-- `vm.plist` - Includes the entitlement that gets signed
+- `entitlements.plist` - Includes the entitlement that gets signed
 
 ### How to run the VM
 
