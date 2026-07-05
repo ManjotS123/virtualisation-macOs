@@ -10,6 +10,10 @@ guard CommandLine.arguments.count == 3 else {
 let kernelURL = URL(fileURLWithPath: CommandLine.arguments[1])
 let initialRamdiskURL = URL(fileURLWithPath: CommandLine.arguments[2])
 
+let networkDevice = VZVirtioNetworkDeviceConfiguration()
+networkDevice.attachment = VZNATNetworkDeviceAttachment()
+virtualMachineConfiguration.networkDevices = [networkDevice]
+
 let configuration = VZVirtualMachineConfiguration()
 let maxCpu = VZVirtualMachineConfiguration.maximumAllowedCPUCount
 let maxMemory = VZVirtualMachineConfiguration.maximumAllowedMemorySize
